@@ -11,3 +11,5 @@ param_graffiti = param["TWF\07",4];
 
 param_slower_cargo_aging = param["TWF\07", 6];
 //param_no_gameplay_units = param["TWF\07", 7];
+
+concept_trains = param_concept_trains;
