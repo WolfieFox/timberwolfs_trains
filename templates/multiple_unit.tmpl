@@ -265,7 +265,9 @@ item(FEAT_TRAINS, {{.id}}, {{.numeric_id}}) {
         engine_class:                 ENGINE_CLASS_DIESEL;
         {{- end}}
 
-        {{if .cargo_age_period}}cargo_age_period:             {{.cargo_age_period}};{{end}}
+        cargo_age_period:             ({{if .cargo_age_period -}}
+            {{.cargo_age_period}}{{else}}185
+        {{- end}} * cargo_age_multiplier) / 2;
         running_cost_base:            RUNNING_COST_DIESEL;
         tractive_effort_coefficient:  {{.te_coeff}};
 
@@ -298,7 +300,10 @@ item(FEAT_TRAINS, {{.id}}, {{.numeric_id}}) {
         default_cargo_type:           {{.default_cargo}};
         {{end}}{{end}}
         weight:                       {{.weight}} ton;
-        
+        {{- if .variant_group}}
+        variant_group:                {{.variant_group}};
+        extra_flags:                  bitmask(VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        {{- end}}
     }
 
     graphics {

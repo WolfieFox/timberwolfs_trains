@@ -1,3 +1,31 @@
+v1.7.7
+------
+
+Added Class 69
+
+v1.7.6
+------
+
+Fix existing game carriage capacity changing
+
+v1.7.5
+------
+
+BR carriages now offered in multiple variants
+Added parameter to hide fictional vehicles
+Small capacity boost to Mk1/Mk2 TSO
+Fix incorrect flavour text for (fictional) Mk2 BG
+
+v1.7.4
+------
+
+Small code cleanup
+
+v1.7.3
+------
+
+Allow modifying cargo aging for extremely large/small maps
+
 v1.7.2
 ------
 

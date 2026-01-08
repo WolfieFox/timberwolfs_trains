@@ -1,3 +1,24 @@
+v1.2.4
+------
+
+Fix game-import Mk2f being generally available
+
+v1.2.3
+------
+
+BR carriages now offered in multiple variants
+Added parameter to hide hypothetical vehicles
+
+v1.2.2
+------
+
+Fix broken preserved railway logic
+
+v1.2.1
+------
+
+Allow modifying cargo aging for extremely large/small maps
+
 v1.2.0
 ------
 
