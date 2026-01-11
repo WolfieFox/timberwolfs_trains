@@ -5,7 +5,7 @@
         "name": "Wolfie's UK Trains 0.1.0",
         "description": "Oddballs and Infill, heavily based on Timberwolf's UK Train set and designed exclusively to run with that set. Optionally includes some 'paper' concept trains if you feel like being different",
         "min_compat_version": 1,
-        "filename": "timberwolfs_community_addon2.nml",
+        "filename": "Wolfies_Train_Extension.nml",
         "language": "english", 
         "parameters": [
             {

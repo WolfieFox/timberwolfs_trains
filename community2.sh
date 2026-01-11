@@ -49,10 +49,10 @@ echo "Rendering purchase sprites"
 echo "Compiling set"
 ../roadie/roadie.exe set_community2.json
 echo "Compiling NML"
-../nml/nmlc.exe -c timberwolfs_community_addon2.nml
+../nml/nmlc.exe -c Wolfies_Train_Extension.nml
 
 echo "Building TAR"
-mkdir -p timberwolfs_community_addon2
-mv *.grf timberwolfs_community_addon2
-cp grf_readme/community2/* timberwolfs_community_addon2
-tar -c timberwolfs_community_addon2 > timberwolfs_community_addon2.tar
+mkdir -p Wolfies_Train_Extension
+mv *.grf Wolfies_Train_Extension
+cp grf_readme/community2/* Wolfies_Train_Extension
+tar -c Wolfies_Train_Extension > Wolfies_Train_Extension.tar
