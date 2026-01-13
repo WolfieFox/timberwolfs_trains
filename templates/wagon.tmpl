@@ -825,6 +825,13 @@ vehicle_life:                 {{.vehicle_life}};
 {{else if eq .cargo_handling "Bulk" }}
     refittable_cargo_classes: bitmask(CC_BULK);
     cargo_allow_refit: [FRUT];
+{{else if eq .cargo_handling "Covered" }}
+    refittable_cargo_classes: bitmask(CC_COVERED_BULK);
+    cargo_allow_refit: [ GRAI, CMNT, NITR, POTA ];
+    cargo_disallow_refit: [WOOL];
+{{else if eq .cargo_handling "Powder" }}
+    refittable_cargo_classes: bitmask(CC_POWDER_BULK);
+    cargo_allow_refit: [ACID,CHLO,CBLK,CMNT,POTA,NITR,QLME,SALT,SASH];
 {{else if eq .cargo_handling "EarlyOpen" }}
     refittable_cargo_classes: bitmask(CC_BULK, CC_LIQUID);
     cargo_allow_refit: [ACID, CHLO, FRUT, LVST];
